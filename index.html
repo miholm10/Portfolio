@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mikhail Holmes | Portfolio</title>
+  <meta name="description" content="Mikhail Holmes Portfolio" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="container">
+    <h1>👋 Welcome to Mikhail's Portfolio!</h1>
+    <p>If you see this page, please give me a job 😁</p>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile container">
+    <img
+      src="assets/image/mikhail.jpg"
+      alt="Portrait of Mikhail Holmes"
+      class="profile-img"
+    />
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="card">
+      <h2>What do you want to see next?</h2>
+      <ul class="nav-list">
+        <li><a href="https://drive.google.com/file/d/1BLQuLDcxppa55qD5BBcnUjdds_Ks6uxI/view" target="_blank">Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/mikhailholmes" target="_blank">LinkedIn</a></li>
+        <li><a href="https://medium.com/@mikhailholmes2" target="_blank">Blog</a></li>
+        <li><a href="https://github.com/mikhailholmes" target="_blank">Projects</a></li>
+      </ul>
+
+      <button id="btn" type="button">Click me</button>
+      <p id="msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    <small>© <span id="year"></span> Mikhail Holmes. All rights reserved.</small>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Show current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Add simple button interactivity
+    const btn = document.getElementById('btn');
+    const msg = document.getElementById('msg');
+
+    btn.addEventListener('click', () => {
+      msg.textContent = "Thanks for visiting my portfolio!";
+    });
+  </script>
+</body>
+</html>
+
+

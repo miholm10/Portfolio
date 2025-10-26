@@ -1,0 +1,113 @@
+/* Base */
+:root {
+  --accent: #0073e6;
+  --accent-dark: #005bb5;
+  --text: #333;
+  --card-bg: #ffffff;
+  --page-bg: #f7f8fa;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: var(--page-bg);
+  text-align: center;
+}
+
+/* Layout containers */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+header h1 { margin: 0 0 8px; }
+
+.profile { margin-top: 8px; }
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 28px 20px;
+  margin-top: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 { margin-top: 0; }
+
+/* Profile image */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover { transform: scale(1.03); }
+
+/* Navigation list styled as buttons */
+.nav-list {
+  list-style: none;       /* remove numbers */
+  padding: 0;
+  margin: 22px 0 18px;
+}
+
+.nav-list li {
+  display: inline-block;  /* horizontal row */
+  margin: 8px;
+}
+
+.nav-list a {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 115, 230, 0.25);
+}
+
+.nav-list a:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+/* Demo button + message */
+button#btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #6600FF;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+button#btn:hover { background: #555; }
+
+#msg { min-height: 24px; margin-top: 10px; }
+
+/* Footer */
+footer small { color: #666; }
+
+/* Responsive tweaks */
+@media (max-width: 520px) {
+  .nav-list li { display: block; }
+  .nav-list a { width: 100%; }
+  .profile-img { width: 150px; height: 150px; }
+}
