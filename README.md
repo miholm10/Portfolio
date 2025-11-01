@@ -1,9 +1,9 @@
 ``` markdown
-# PythonProject1 - Mikhail Holmes Portfolio
+PythonProject1 - Mikhail Holmes Portfolio
 
-> A hybrid portfolio project demonstrating full-stack web development, cloud architecture design, and infrastructure-as-code principles.
+A hybrid portfolio project demonstrating full-stack web development, cloud architecture design, and infrastructure-as-code principles.
 
-## Table of Contents
+Table of Contents
 
 - [Overview](#overview)
 - [Project Architecture](#project-architecture)
@@ -41,13 +41,7 @@ This project demonstrates:
 
 The portfolio website provides a professional online presence while the Python diagram generator showcases technical skills in cloud architecture documentation. Together, they demonstrate both frontend and backend/DevOps capabilities to potential employers.
 
----
 
-## Project Architecture
-
-This project follows a hybrid architecture pattern:
-```
-┌─────────────────────────────────────────────────────────┐ │ PythonProject1 │ ├──────────────────────┬──────────────────────────────────┤ │ Web Frontend │ Python Backend/Tooling │ │ (Static HTML/CSS) │ (Diagram Generation) │ ├──────────────────────┴──────────────────────────────────┤ │ AWS Cloud Infrastructure │ │ (Amplify, CloudFront, Route 53, ACM) │ └─────────────────────────────────────────────────────────┘
 ``` 
 
 **Key Design Principles:**
@@ -87,11 +81,7 @@ This project follows a hybrid architecture pattern:
 - **Route 53**: DNS management
 - **ACM (AWS Certificate Manager)**: SSL/TLS certificates
 
----
 
-## Detailed Project Structure
-```
-PythonProject1/ │ ├── index.html # Main portfolio entry point │ └── Purpose: Landing page with navigation to all profile links │ ├── assets/ # Static frontend assets │ ├── style.css # Complete styling system │ │ ├── CSS custom properties for theming │ │ ├── Responsive design (@media queries) │ │ └── Modern effects (shadows, transitions, hover states) │ │ │ ├── app.js # JavaScript interactivity │ │ ├── Dynamic year footer │ │ ├── Button click handlers │ │ └── Navigation link management │ │ │ └── image/ # Image assets │ └── mikhail.jpg # Profile photo │ ├── docs/ # Generated documentation │ └── amplify_static_site_architecture.png │ └── Auto-generated AWS architecture diagram │ ├── script/ # Python automation scripts │ └── portfolio.py # AWS diagram generator │ ├── Defines AWS service nodes │ ├── Creates cluster hierarchies │ └── Generates visual architecture flows │ ├── .venv/ # Python virtual environment │ └── Isolated dependency management │ ├── .git/ # Version control │ └── Git repository for source control │ └── .idea/ # PyCharm IDE configuration └── Project-specific IDE settings
 ``` 
 
 ### File Responsibilities
@@ -804,34 +794,5 @@ This project is for portfolio demonstration purposes. Feel free to use the struc
 - LinkedIn: [linkedin.com/in/mikhailholmes](https://www.linkedin.com/in/mikhailholmes)
 - GitHub: [github.com/miholm10](https://github.com/miholm10)
 - Blog: [medium.com/@mikhailholmes2](https://medium.com/@mikhailholmes2)
-- Resume: [View on Google Drive](https://drive.google.com/file/d/1ruJGhtlUhl2JRcMV5yiNT3XNONV58fcd/view)
 
----
 
-## Acknowledgments
-
-- **diagrams** library by mingrammer
-- **AWS Amplify** team for excellent documentation
-- **PyCharm** for the development environment
-- The open-source community for inspiration
-
----
-
-## Additional Resources
-
-### Learning Resources
-- [AWS Amplify Documentation](https://docs.amplify.aws/)
-- [Diagrams Library Docs](https://diagrams.mingrammer.com/)
-- [MDN Web Docs](https://developer.mozilla.org/) - HTML/CSS/JS reference
-- [Python Official Docs](https://docs.python.org/3/)
-
-### Related Projects
-- [AWS Samples](https://github.com/aws-samples)
-- [Static Site Generators](https://jamstack.org/generators/)
-
-### Tools Used
-- **IDE**: PyCharm 2024+
-- **Version Control**: Git 2.x
-- **Browser**: Chrome/Firefox with DevTools
-- **Design**: Minimalist, professional aesthetic
-```
