@@ -1,4 +1,4 @@
-``` markdown 
+
 #  PythonProject1 - Mikhail Holmes Portfolio
 
 A hybrid portfolio project demonstrating full-stack web development, cloud architecture design, and infrastructure-as-code principles.
@@ -855,4 +855,4 @@ Potential improvements for v2.0:
 ---
 
 **Built with care by Mikhail Holmes | Last Updated: November 2025**
-```
+
