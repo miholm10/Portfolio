@@ -11,7 +11,7 @@
   <!-- Header -->
   <header class="container">
     <h1>👋 Welcome to Mikhail's Portfolio!</h1>
-    <p>If you see this page, please give me a job 😁</p>
+    <p>I build secure, scalable cloud and AI systems. Let's connect.</p>
   </header>
 
   <!-- Profile Section -->
@@ -45,6 +45,9 @@
     <small>© <span id="year"></span> Mikhail Holmes. All rights reserved.</small>
   </footer>
 
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
   <!-- JavaScript -->
   <script>
     // Show current year automatically
@@ -54,7 +57,18 @@
     const btn = document.getElementById('btn');
     const msg = document.getElementById('msg');
 
+
+
+    function fireConfetti() {
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
+}
+
     btn.addEventListener('click', () => {
+      fireConfetti();
       msg.textContent = "Thanks for visiting my portfolio!";
     });
   </script>
